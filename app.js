@@ -35,6 +35,6 @@ app.use(userRoutes);
 
 
 
-app.listen(9000, function () {
+app.listen(process.env.APP_PORT, function () {
     console.log("Server running at port 9000")
  })
