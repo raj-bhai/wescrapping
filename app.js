@@ -5,9 +5,7 @@ const bodyParser = require('body-parser');
 // const mongoose = require('mongoose');
 const cors = require('cors');
 
-// const task = require('./models/task');
 
-;
 const userRoutes = require('./routes/user');
 
 
@@ -35,6 +33,6 @@ app.use(userRoutes);
 
 
 
-app.listen(process.env.APP_PORT, function () {
+app.listen(9000, function () {
     console.log("Server running at port 9000")
  })

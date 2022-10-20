@@ -14,7 +14,7 @@ exports.getScrapping = async (req, res, next) => {
     const page = await browser.newPage();
     await page.goto("https://shopping.google.com/");
     const inputHandle = await page.waitForXPath("//input[@name = 'q']");
-    await inputHandle.type("apple i pad 5", { delay: 50 });
+    await inputHandle.type(searchQuery, { delay: 50 });
 
     await page.keyboard.press("Enter");
     await page.waitForNavigation();
